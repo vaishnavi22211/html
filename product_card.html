@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>Product Card</title>
+    <style>
+       body{
+           padding: 20px;
+           display: flex;
+           justify-content: center;
+           
+       }
+        .container{ border: 2px solid rgb(11, 124, 67);
+            background-color:whitesmoke;
+            
+            height: 500px;
+            width: 500px;
+            display: flex;
+            align-items: center;
+        }
+        .product-info{
+            /* padding: 50px; */
+            text-align: center;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
+         }
+         .product-image,.product-info{
+             width: 50%;
+         }
+        .add-to-card{
+            background-color: turquoise;
+        }
+.product-image > img{
+    max-width: 100%;
+    height: 100%;
+}
+#rate{
+    height: 100px;
+    width: 200px;
+}
+/* .product-image{
+    height: 500px;
+} */
+    </style>
+    
+    <script src="https://kit.fontawesome.com/5a9aabc0c3.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+       <!-- <center> -->
+        <div class="container" >
+            <div class="product-image" >
+                <img src="images\mobile.jpg" >
+            </div>
+            <div class="product-info">
+              
+                   <h1 class="product-title">iPhone 15 Pro Max(1 TB)-White Titanium</h1><br><br><br><br><br><br>
+
+                    
+                     <i class="fa-solid fa-indian-rupee-sign"></i><u>9,59,900</u> <br><br>
+                     <img src="images\rate.png" id="rate">
+                     <br>
+                   <button class="add-to-card"> Add-to-buy</button>
+                </div>
+            </div>
+        </div>
+       <!-- </center>  -->
+    </body>
+</html>
