@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Counter</title>
+    </head>
+    <style>
+        body{
+            border: 10px solid rgb(41, 29, 29);
+        }
+        #main{
+            text-align: center;
+            padding-top: 15%;
+        }
+        button{
+            color: hotpink;
+            background-color:powderblue;
+        }
+    </style>
+    <body>
+        <div id=main>
+        <span id="count"></span>
+        <div>
+            <button onclick="insert()">Insert</button>
+            <button onclick="zero()">Zero</button>
+            <button onclick="Delete()">Delete</button>
+            </div>
+<script>
+  let a=0;
+   document.getElementById("count").innerText=a;
+function insert() {
+    a=++a;
+    document.getElementById("count").innerText=a;
+   if(a>0){
+   document.getElementById("count").style.color="green"
+   }
+    else if(a=0){
+    document.getElementById("count").style.color="black"
+     }
+    }
+ function Delete(){ 
+     a=--a;
+     document.getElementById("count").innerText=a;
+     if(a<0){
+        document.getElementById("count").style.color="red"
+     } else if(a=0){
+         document.getElementById("count").style.color="black"
+     }
+ }
+function zero(){
+    a=0;
+    document.getElementById("count").innerText=a;
+    document.getElementById("count").style.color="black"
+}
+
+ </script>
+
+        </div>
+    </div>
+    </body>
+</html>
