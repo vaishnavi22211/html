@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Day No_Day Name</title>
+    </head>
+    <style>
+        body{
+    
+            padding-top: 15%;
+        }
+        #main{
+           
+            height: 100px;
+            width: 500px;
+            padding-top: 10%;
+            background-color:lightpink;
+            color:black;
+            text-align: center;
+            text-decoration: underline;
+            justify-content: center
+        }
+    </style>
+    <body>
+        <div id="main">
+        <div id="day"></div>
+        <script>
+let a=prompt("Please Enter A number");
+switch(a){
+    case('0'):
+         document.getElementById("day").innerHTML=("* Its a SUNDAY *");
+    break;
+    case ('1'):
+        document.getElementById("day").innerHTML=(" * Its a MONDAY *");
+    break;
+    case('2'):
+        document.getElementById("day").innerHTML=("* Its a TUESDAY *");
+    break;
+    case('3'):
+        document.getElementById("day").innerHTML=("* Its a WEDNESDAY *");
+    break;
+    case('4'):
+    document.getElementById("day").innerHTML=("* Its a THURSDAY *");
+    break;
+    case('5'):
+        document.getElementById("day").innerHTML=("* Its a FRIDAY *");
+    break;
+    case('6'):
+            document.getElementById("day").innerHTML=("* Its a SATURDAY *");
+    break;
+}
+    </script>
+    </div>
+    </body>
+    </html>
