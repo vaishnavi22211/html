@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>day name from date</title>
+        
+    </head>
+    <style>
+    
+   #main{
+    
+    height: 100px;
+    width: 500px;
+    padding-top: 10%;
+    background-color:lightpink;
+    color:black;
+    text-align: center;
+    text-decoration: underline;
+   
+        }
+    </style>
+    <body>
+        
+        <div id="main">
+        <script>
+           let d= prompt("enter any number");
+           d=Number.parseInt(d);
+           if(d==1||d==8||d==15||d==22||d==29){
+               document.write("Friday");
+           } else if(d==2||d==9||d==16||d==23||d==30){
+               document.write("Saturday");
+           }else if(d==3||d==10||d==17||d==24||d==31){
+               document.write("Sunday");
+           }else if(d==4||d==11||d==18||d==25){
+               document.write("Monday");
+           }else if(d==5||d==12||d==19||d==26){
+               document.write("Tuesday");
+           }else if(d==6||d==13||d==20||d==27){
+               document.write("Wednesday");
+           }else if(d==7||d==14||d==21||d==28){
+               document.write("Thursday");
+            }
+       else {
+    document.write("Invalid");
+       }
+        </script>
+        </div>
+    
+</body>
+</html>
