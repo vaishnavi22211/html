@@ -1,0 +1,62 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>student calculate</title> 
+	 
+</head> 
+<style>
+	
+</style>
+<body> 
+	<div class="container"> 
+	<h1>Student grade</h1> 
+	<div > 
+		<div > 
+			<input type="" placeholder="COMPUTER"id="computer" > 
+		</div> 
+		<div> 
+			<input type=""placeholder="HINDI"id="hindi"> 
+		</div> 
+		<div> 
+			<input type="text"placeholder="MATHS"id="maths"> 
+		</div> 
+		<div> 
+			<input type="text"placeholder="PHYSICS"id="phy"> 
+		</div> 
+		<div> 
+			<input type="button" value="Result" onclick=calculate()> 
+		</div> 
+		</div>  
+	<script >
+	function calculate()
+{  
+let computer = document.getElementById("computer").value; 
+let hindi = document.getElementById("hindi").value; 
+let maths = document.getElementById("maths").value; 
+let phy = document.getElementById("phy").value; 
+computer=Number.parseInt(computer);
+hindi=Number.parseInt(hindi);
+maths=Number.parseInt(maths);
+phy=Number.parseInt(phy);
+let total=computer+hindi+maths+phy;
+let per=(total/400*100);
+document.write('Total is=',total,"<br>");
+document.write('Percentage is=',per,"<br>");
+console.log(total)
+console.log(per)
+
+if(per<=100 &&  per>=80){
+document.write("You passed with the Grade A");
+}else if(per<=79 && per>=60){
+	document.write("You passed with the Grade B");
+}else if(per<=59 && per>=40){
+	document.write("You passed with the Grade C");
+}else if(per<=35){
+	document.write("fail");
+}else{
+	document.write("Invalid");
+}
+}
+</script>
+</body> 
+</html> 
