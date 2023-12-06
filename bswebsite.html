@@ -1,0 +1,265 @@
+<html>
+<head>
+<title> Website </title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/5a9aabc0c3.js" crossorigin="anonymous"></script>
+<style>
+   nav{
+    top: 0;
+   left: 0;
+    position: fixed;
+   }
+   body{
+    border: 5px solid brown; 
+}
+    #d{
+        padding-left: 20px;
+   height: 400px;
+   width: 400px;
+   top: 0;
+   left: 0;
+}
+.main {
+    padding-bottom: 5%;
+   padding-left: 5%;
+   padding-top: 5%;
+   display: flex;
+   background-color:blanchedalmond;
+}
+.pp{
+    background-color: green;
+    height: 20px;
+    width: 100px;
+}
+nav{
+    /* background-image: url("image/bgg.jpg"); */
+    background-color: rgb(248, 181, 158);
+    opacity: 100%;
+
+}
+ h3{
+    background-color: rgb(53, 214, 53);
+    color: white;
+} h1{
+    text-align: center;
+}
+figure{
+    background-color:thistle;
+    
+}
+.info{
+    padding-left: 10%;
+    padding-top: 2%;
+}
+
+    #imageGrid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+       gap: 10px; /*Adjust the gap between images */
+       background-color: yellow;
+    }
+
+    .gridItem {
+      width: 100%;
+      overflow:hidden;
+      /* border: 1px solid green; /* Add borders for better visibility */
+      /* border-radius: 5px;  */
+    }
+    .gridItem:hover{
+      transform: scale(1.2);
+    }
+
+    .gridItem img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  .value{
+      padding-right: 10%;
+    }
+    .feacture{
+      padding-top: 0;
+      display: flex;
+       padding-bottom: 5%;
+   padding-left: 5%;
+   padding-top: 5%; 
+    }
+    #dis{
+      background-color: springgreen;
+     }
+#fre{
+  background-color:skyblue;
+ }
+#home{  
+  background-color:rgb(247, 198, 206);
+} 
+.flex-container {
+      border: 1px solid black;
+      padding: 10px;
+      display: flex;
+      background-color: beige;
+    }
+     .flex-item {
+      border: 1px solid rgb(152, 152, 240);
+      padding: 10px;
+      margin: 5px;
+    }
+    #dis:hover{
+    box-shadow:0 0 15px  blue;
+    }
+    #fre:hover{
+      box-shadow:0 0 15px  blue;
+    }
+    #home:hover{
+      box-shadow:0 0 15px  blue;
+    }
+    .item{
+      border: 1px solid rgb(152, 152, 240);
+      padding: 10px;
+      margin: 5px;
+      background-color:rgb(238, 196, 203);
+    }
+    #con{
+      padding-top:4%;
+    }
+#fresh{
+  height: 50px;
+  width: 50px;
+}
+#more{
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid blue;
+      padding: 10px;
+background-color: seashell;
+}
+#logo{
+  height: 300px;
+  width: 200px;
+}
+i{
+  height: 40px;
+  width: 40px;
+}
+.exb{
+  background-color: rgb(0, 255, 128);
+}
+#hi{
+  font-size: xx-large;
+  background-color: springgreen;
+  color: black;
+  font-family: 'Times New Roman', Times, serif;
+}
+h4{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: x-large;
+  text-decoration: solid;
+}
+</style>
+
+</head>
+<body>
+   
+    <nav class="navbar " class="navbar  fixed-top">
+        <div class="container-fluid"  >
+          <a class="navbar-brand" href="#"> 
+            <img src="/image/logo.jpg" alt="Logo" width="120" height="120" class="d-inline-block align-text-top border:black"> 
+          </a> 
+         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"> </span>
+          </button>  
+        </div>
+      </nav>
+<section>
+        <figure class="text-center">
+            <blockquote class="blockquote">
+              <h1>" Food Hunt "<br>
+                Always fresh & Delightful
+              </h1>
+            </blockquote>
+        </figure>
+</section>
+            <div class="main">
+            <div class="dish">
+                    <img src="/image/dd.jpg" id="d">  </div>
+            <div class="info"><h3>50% Off on All Products</h3><br></div><br>
+                <div class="value">
+                  <h1>"Enjoy Your Delicious Food"<br>
+                COME HUNGRY....... LEAVE HAPPY.</h1> <br><br><h4>For more</h4><br>
+               <div><a  href="menu.html"id="hi" >EXPLORE</a></div>
+            </div>
+             </div> 
+             <figure class="text-center">
+                <blockquote class="blockquote">
+                  <h1>Eat As You Want </h1>
+                </blockquote>
+            </figure>
+        <div id="imageGrid"></div>
+
+<script>
+  const imageUrls = [
+    '/image/box a.jpg',
+    '/image/box b.jpg',
+    '/image/box c.png',
+    '/image/box d.jpg',
+    '/image/box e.jpg',
+    '/image/box f.jpg',
+  ];
+  function createImageGrid(images) {
+    const gridContainer = document.getElementById('imageGrid');
+     images.forEach((imageUrl, index) => {
+      const gridItem = document.createElement('div');
+      gridItem.className = 'gridItem';
+      const image = document.createElement('img');
+      image.src = imageUrl;
+      image.alt = `Image ${index + 1}`;
+      gridItem.appendChild(image);
+      gridContainer.appendChild(gridItem);
+    });
+  }
+  createImageGrid(imageUrls);
+</script>
+<div id="con">
+<div id="container" class="flex-container">
+  <div class="flex-item" id="dis"><h2>   <i class="fa-solid fa-tags"></i> Discount Voucher.</h2>
+    Up to 50% Off.
+     <br> Save your money.</div>
+  <div class="flex-item" id="fre"><h2> <img src="/image/fresh 1.jpg" id="fresh">    Fresh Healthy Food </h2>Provide fresh and healthy food</div>
+  <div class="flex-item" id="home"><h2> <i class="fa-solid fa-truck-fast"></i> Fast Home <br> Delivery </h2> within 20 min food Delivery</div>
+</div></div>
+<script>
+  var container = document.getElementById("container");
+  container.style.display = "flex";
+  container.style.justifyContent = "space-between"; 
+</script>
+<div id="more" >
+  <div><img src="/image/logo.jpg" id="logo"></div>
+  <div class="item"> <h1>Main Links <hr></h1> <br> 
+    <li>Order Tracking</li>
+    <li>New Order</li>
+    <li>Contack Us</li>
+    <li><a href="">News & Blogs</a></li>
+  </div>
+  <div class="item"><h1>Support <hr></h1> <br>
+    <li>About Us</li>
+    <li>Primary Policy</li>
+    <li>Terms & Conditions</li>
+  </div>
+  <div class="item"> <h1>Support <hr></h1> <br>
+    <input type="email" placeholder="Enter Your Email">
+    <h2>Follow Us</h2>
+    <i class="fa-brands fa-facebook"></i> 
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-youtube"></i>
+  </div>
+</div>
+</head>
+<body>     
+</html>
+
+    
+   
+  
+
