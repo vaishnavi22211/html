@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Love Letter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: #e60000;
+        }
+        #love-letter {
+            margin-top: 50px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        textarea {
+            width: 100%;
+            height: 200px;
+            resize: none;
+            margin-top: 20px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        #submit-button {
+            background-color: #e60000;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Virtual Love Letter</h1>
+    <div id="love-letter">
+        <p>Write your love letter below:</p>
+        <textarea id="letter-content" placeholder="Dear love, ..."></textarea>
+        <button id="submit-button" onclick="sendLoveLetter()">Send Letter</button>
+    </div>
+
+    <script>
+        function sendLoveLetter() {
+            var letterContent = document.getElementById('letter-content').value.trim();
+
+            if (letterContent === '') {
+                alert('Please write something in the love letter!');
+                return;
+            }
+
+            alert('Love letter sent!');
+
+            // You can add code here to send the letter to a server, store it in a database, or display it elsewhere.
+        }
+    </script>
+</body>
+</html>
